@@ -24,8 +24,7 @@
 
 |              选项 | 描述                                                                  |
 | ---------------: | ---------------------------------------------------------------------------- |
-|        remoteUrl | 自定义远程json代码片段，要求json类片段满足以数组的形式                                   |
-|   languageScopes | list of supported languages / files recognition                              |
+|        remoteUrl | 自定义远程json代码片段，要求json类片段满足特定格式如下描述                                   |
 |  prettierEnabled | 确定是否应该使用开启prettier的配置来解析片段         |
 | importReactOnTop | 如果设置该配置项禁用状态，代码不会在顶部包含 `import React`. |
 |       typescript | 添加额外的 typescript代码片段                                          |
@@ -54,5 +53,5 @@
    
 ```
 ## [英文](./README-en.md)
-## [模板片段](./docs/Snippets.md)
+## [内置的模板片段](./docs/Snippets.md)
 
