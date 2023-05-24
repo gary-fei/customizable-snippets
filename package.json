@@ -65,6 +65,11 @@
     "configuration": {
       "title": "ES React/React-Native/Redux snippets",
       "properties": {
+        "reactSnippets.settings.remoteUrl": {
+          "type": ["string", "null"],
+          "markdownDescription": "snippets to remoteUrl",
+          "default": "https://gary-fei.github.io/css/json/test.json"
+        },
         "reactSnippets.settings.prettierEnabled": {
           "type": "boolean",
           "markdownDescription": "[EXPERIMENTAL: MIGHT NOT WORK]: Integrate prettier settings with code generated from snippets.",

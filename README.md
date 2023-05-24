@@ -15,5 +15,9 @@ Launch _Quick Open_:
 
 <br>
 
+### Customizable template 
+- Customizable json is dynamically obtained through [url](https://gary-fei.github.io/css/json/test.json)
+- The remoteUrl can be repaired by vscode settings("reactSnippets.settings.remoteUrl")
+
 ## [Snippets](./docs/Snippets.md)
 

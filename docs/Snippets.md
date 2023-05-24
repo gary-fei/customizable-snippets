@@ -11,6 +11,9 @@ I.E. `tsrcc`
 
 <br>
 
+### Customizable template 
+- The remoteUrl defaultValue ("https://gary-fei.github.io/css/json/test.json")
+- You can configure your remoteURL in vscode settings by "reactSnippets.settings.remoteUrl"
 ### React Hooks
 
 - Hooks from [official docs](https://reactjs.org/docs/hooks-reference.html) are added with hook name as prefix.

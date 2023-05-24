@@ -51,34 +51,10 @@ export type Snippets = {
   [key in SnippetKeys]: Snippet;
 };
 
-// const getSnippets = () => {
-//   const { typescript, languageScopes } = extensionConfig();
-
-//   const snippets = [
-//     ...(typescript ? typescriptSnippets : []),
-//     ...componentsSnippets,
-//     ...consoleSnippets,
-//     ...hooksSnippets,
-//     ...importsSnippets,
-//     ...propTypesSnippets,
-//     ...reactNativeSnippets,
-//     ...reduxSnippets,
-//     ...testsSnippets,
-//     ...othersSnippets,
-//   ].reduce((acc, snippet) => {
-//     acc[snippet.key] = Object.assign(snippet, {
-//       body: parseSnippetToBody(snippet),
-//       scope: languageScopes,
-//     });
-//     return acc;
-//   }, {} as Snippets);
-//   // json序列化后,替换需光标停留的部分代码
-//   return replaceSnippetPlaceholders(JSON.stringify(snippets, null, 2));
-// };
 const getNewSnippets = async () => {
-  const { typescript, languageScopes } = extensionConfig();
-  const testObj= await fetch('https://gary-fei.github.io/css/json/test.json', {}).then((res:any) => res.json())
-  console.log(testObj,'testObj')
+  const { typescript, languageScopes,remoteUrl } = extensionConfig();
+  // const testObj= await fetch('https://gary-fei.github.io/css/json/test.json', {}).then((res:any) => res.json())
+  const testObj= await fetch(remoteUrl, {}).then((res:any) => res.json()).catch((e?:Error)=>{ if (e){return []}})
   const snippets = [
     ...(typescript ? typescriptSnippets : []),
     ...componentsSnippets,

@@ -1,6 +1,7 @@
 import { workspace } from 'vscode';
 
 export type ExtensionSettings = {
+  remoteUrl: string;
   languageScopes: string;
   prettierEnabled: boolean;
   importReactOnTop: boolean;
